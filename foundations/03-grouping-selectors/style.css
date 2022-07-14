@@ -1,0 +1,11 @@
+.black-button{
+    background-color:   rgba(39, 35, 35, 0.74);
+    color:rgb(255,255,255);
+}
+.yellow-button{
+    background-color: rgb(224, 212, 34);
+}
+.black-button, .yellow-button{
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}

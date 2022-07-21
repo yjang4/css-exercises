@@ -4,7 +4,13 @@
 }
 
 .container {
+  height: 900px;
   text-align: center;
+
+  display: grid;
+  grid-template-rows: minmax(50px, 2fr) minmax(50px, 1fr) minmax(600px, 12fr) minmax(50px, 1fr);
+  grid-template-columns: minmax(50px, 1fr) minmax(150px, 3fr);
+  gap:15px;
 }
 
 .container div {
@@ -17,15 +23,43 @@
 
 .header {
   background-color: #393f4d;
+
+  display: grid;
+  grid-template-rows: minmax(50px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 3fr);
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
+  
 }
 
+.menu ul {
+  
+  display: grid;
+  grid-template-rows: minmax(50px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+}
 .sidebar {
   background-color: #FF7755;
+
+  display: grid;
+  grid-template-rows: minmax(50px, 350px) minmax(50px, 350px) minmax(50px, 350px) minmax(50px, 350px) ;
+  grid-template-columns: minmax(100px, 1fr);
+  gap: 15px;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  
 }
 
 .sidebar .photo {
@@ -46,15 +80,38 @@
 
 .nav {
   background-color: #FF7755;
+
+  
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .nav ul li {
   font-size: 16px;
   text-transform: uppercase;
+
+  
+}
+.nav ul {
+  display: grid;
+  grid-template-rows: minmax(50px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
 }
 
 .article {
   background-color: #bccbde;
+
+  display: grid;
+  grid-template-rows: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+  gap: 15px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .article p {
@@ -83,6 +140,11 @@
 
 .footer {
   background-color: #393f4d;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 .footer p {

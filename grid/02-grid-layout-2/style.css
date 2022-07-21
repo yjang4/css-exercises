@@ -8,6 +8,11 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: minmax(100px, 1fr) minmax(200px, 2fr);
+  grid-template-rows: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 3fr) minmax(100px, 1fr);
 }
 
 .container div {
